@@ -1,9 +1,9 @@
-import Image from "next/image";
+import DragDrop from "./components/DragDrop";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    <div>ToDo-List</div>
-    </main>
+    <div className="flex justify-around justify-between p-24">
+    <DragDrop/>
+    </div>
   );
 }
