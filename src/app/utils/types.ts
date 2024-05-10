@@ -1,6 +1,7 @@
-export type StateType = Array<Array<TodoItem>>;
+export type DataType = Array<Array<TodoItem>>;
  
-  interface TodoItem {
+  export interface TodoItem {
+    id:number
     title: string;
     completed?: boolean;
   }

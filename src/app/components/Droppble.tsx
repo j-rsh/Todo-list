@@ -5,14 +5,13 @@ import { Droppable, DroppableProps, DroppableProvided, DroppableStateSnapshot } 
 
 interface DroppbleProps{
     el:any,
-    ind:number,
-    key:number
+    index:string,
 }
 
-const Droppble: React.FC<DroppbleProps> = ({el,ind}) => {
+const Droppble: React.FC<DroppbleProps> = ({el,index}) => {
     
     return ( 
-            <StrictModeDroppable key={ind} droppableId={`${ind}`}>
+            <StrictModeDroppable key={index} droppableId={`${index}`}>
               {(provided: DroppableProvided, snapshot: DroppableStateSnapshot) => (
                 <div
                   ref={provided.innerRef}
