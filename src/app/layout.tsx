@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-violet-300">
       <ApolloProvider client={client}>{children}</ApolloProvider>
         </body>
     </html>

@@ -1,8 +1,8 @@
 import { ApolloServer } from "apollo-server-micro";
 import type { NextApiRequest, NextApiResponse } from "next";
 import NextCors from "nextjs-cors";
-import { resolvers } from "../../graphql/resolvers";
-import { typeDefs } from "../../graphql/schema";
+import { resolvers } from "../../graphql-server/resolvers";
+import { typeDefs } from "../../graphql-server/schema";
 
 const apolloServer = new ApolloServer({
   typeDefs,

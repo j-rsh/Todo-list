@@ -1,19 +1,13 @@
 import { gql } from "@apollo/client";
 
 const GET_TODOS = gql`
-query{
-    todos{
-      data{
-        id,
-        title,
-        completed,
-        user
-        {
-          name
-        }
-      }
+  query {
+    todos {
+      id,
+      title,
+      completed
     }
   }
-
+  
 `
 export default GET_TODOS;

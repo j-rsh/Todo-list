@@ -8,7 +8,7 @@ const useData = (data: TodoItem[]) => {
     const todo: Array<TodoItem> = [];
 
     if(data){
-        data.map((item: TodoItem) =>
+        data?.map((item: TodoItem) =>
             item.completed ? done.push(item) : todo.push(item));
     }
     
