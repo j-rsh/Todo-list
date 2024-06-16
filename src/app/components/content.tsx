@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Modal from "./modal";
-import { UPDATE_TODO } from "../graphql/mutation";
-import { useMutation } from "@apollo/client";
-import { PencilSquareIcon } from "@heroicons/react/24/outline";
+
 
 const Content: React.FC<any> = ({ title, id }) => {
   const [open, setOpen] = useState(false);
